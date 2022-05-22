@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
     stack: any[];
     size: number;
     N: number;
@@ -44,6 +44,7 @@ class Stack {
             this.resize(Math.round(this.size / 2));
         }
 
+        this.stack[this.N] = undefined;
         return popValue;
     }
 
